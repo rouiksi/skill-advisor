@@ -62,3 +62,9 @@ sources.json ──► crawler/build_index.py ──► index/index.json + chang
 
 ### Hook Claude Code (`hooks/suggest_hook.py`)
 - Evento `UserPromptSubmit`: legge il prompt, chiama il suggeritore con soglia più alta, e solo se c'è un match forte aggiunge una riga di contesto invisibile per Claude ("potrebbe servire la skill X"). Timeout 2 s: non rallenta mai la chat.
+
+## 5. Passo 1 di miglioramento (fatto)
+- **Arricchimento** (`enrichment/skills.json`): per ogni skill categoria, vantaggio in una frase, frasi d'esempio IT/EN e casi in cui non serve. Legato all'hash della versione: se la skill cambia, il crawler la segnala come `stale`; se è nuova, come `missing`.
+- **Abbinamento BM25** su nome, esempi, parole chiave e descrizione, con soglia normalizzata e taglio dei candidati deboli (sotto il 60% del migliore).
+- **Hook**: usa anche gli ultimi 2 messaggi, ignora i comandi `/`, salta le skill già installate su disco.
+- **Controllo qualità** (`tests/eval.py`): 23 richieste realistiche. Il workflow non pubblica l'indice se il primo posto scende sotto il 75% o i falsi allarmi superano il 25%.

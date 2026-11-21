@@ -1,0 +1,272 @@
+{
+ "academy-guide": {
+  "for_version": "f27992510c05",
+  "category": "formazione",
+  "value": "ti indica corsi e tutorial ufficiali di Claude Academy sull'argomento",
+  "examples": [
+   "come si usa Claude per lavorare meglio",
+   "dove imparo a usare i progetti di Claude",
+   "corso per imparare Claude",
+   "tutorial su Claude Code",
+   "how do I learn to use Claude",
+   "esiste una guida ufficiale per usare Claude"
+  ],
+  "not_for": []
+ },
+ "algorithmic-art": {
+  "for_version": "3bc4092c0980",
+  "category": "design",
+  "value": "crea arte generativa con codice p5.js e parametri regolabili",
+  "examples": [
+   "arte generativa con il codice",
+   "crea un'opera con particelle e flow field",
+   "sfondo astratto generato con p5.js",
+   "generative art animation",
+   "disegno algoritmico casuale con seed",
+   "visual creativo fatto con codice"
+  ],
+  "not_for": [
+   "logo",
+   "grafica social"
+  ]
+ },
+ "brand-guidelines": {
+  "for_version": "1120b3769e29",
+  "category": "design",
+  "value": "applica colori e font ufficiali del marchio Anthropic",
+  "examples": [
+   "usa i colori ufficiali di Anthropic",
+   "stile del brand Anthropic",
+   "font e palette Anthropic per la presentazione",
+   "apply Anthropic brand guidelines"
+  ],
+  "not_for": [
+   "brand del cliente",
+   "il mio marchio"
+  ]
+ },
+ "canvas-design": {
+  "for_version": "a1f288079624",
+  "category": "design",
+  "value": "produce poster e grafiche statiche curate in PNG o PDF",
+  "examples": [
+   "crea un poster per l'evento",
+   "locandina in pdf",
+   "grafica statica per la stampa",
+   "volantino per la serata",
+   "design a poster png",
+   "copertina grafica per il catalogo",
+   "illustrazione per un manifesto"
+  ],
+  "not_for": []
+ },
+ "claude-api": {
+  "for_version": "40537cca17c4",
+  "category": "sviluppo",
+  "value": "usa modelli, prezzi e parametri aggiornati dell'API Claude invece di andare a memoria",
+  "examples": [
+   "integra Claude nella mia app con l'API",
+   "chiamata all'SDK Anthropic in python",
+   "quale modello Claude conviene e quanto costa",
+   "streaming e tool use con l'API Claude",
+   "prompt caching anthropic",
+   "build an agent with the Claude API",
+   "usare le api di claude nel backend",
+   "chiamare claude da codice node o python"
+  ],
+  "not_for": []
+ },
+ "discernment-nudge": {
+  "for_version": "9191177c4a8e",
+  "category": "qualità",
+  "value": "ti aiuta a verificare consigli e bozze prima di usarli",
+  "examples": [
+   "posso fidarmi di questa analisi",
+   "verifica i numeri di questa stima prima che la mandi",
+   "controlla se questo piano regge",
+   "double check this advice"
+  ],
+  "not_for": []
+ },
+ "doc-coauthoring": {
+  "for_version": "2e47d78846fa",
+  "category": "scrittura",
+  "value": "guida la scrittura di documenti strutturati passo passo, raccogliendo prima il contesto",
+  "examples": [
+   "scriviamo insieme una proposta",
+   "documento tecnico di specifiche",
+   "bozza di un documento decisionale",
+   "aiutami a scrivere una proposta commerciale strutturata",
+   "write a technical spec",
+   "redigere la documentazione del progetto"
+  ],
+  "not_for": []
+ },
+ "docx": {
+  "for_version": "895d5aa6c4cd",
+  "category": "documenti",
+  "value": "genera e modifica veri file Word .docx con formattazione, tabelle e revisioni",
+  "examples": [
+   "prepara un documento word",
+   "contratto in formato docx",
+   "modifica questo file word",
+   "lettera in word da mandare al cliente",
+   "aggiungi revisioni al documento word",
+   "create a word document",
+   "preventivo in word"
+  ],
+  "not_for": []
+ },
+ "frontend-design": {
+  "for_version": "d91970639e9f",
+  "category": "design",
+  "value": "dà a interfacce e siti un aspetto curato e non da template",
+  "examples": [
+   "rendi più bello il sito",
+   "design della landing page",
+   "interfaccia moderna per la web app",
+   "migliora la grafica della pagina web",
+   "scegli tipografia e stile della UI",
+   "make this UI look less generic"
+  ],
+  "not_for": []
+ },
+ "internal-comms": {
+  "for_version": "067b7587a344",
+  "category": "scrittura",
+  "value": "scrive comunicazioni interne nei formati aziendali (report, aggiornamenti, newsletter)",
+  "examples": [
+   "scrivi il report settimanale per il team",
+   "aggiornamento di stato per la direzione",
+   "newsletter interna aziendale",
+   "comunicazione ai dipendenti",
+   "status update for leadership",
+   "faq interne"
+  ],
+  "not_for": []
+ },
+ "mcp-builder": {
+  "for_version": "b483b56d6673",
+  "category": "sviluppo",
+  "value": "costruisce server MCP ben progettati per collegare Claude a servizi esterni",
+  "examples": [
+   "crea un server MCP",
+   "collega Claude alla mia API",
+   "connettore per il gestionale",
+   "build an MCP server in python",
+   "integrazione di un servizio esterno con strumenti per l'AI"
+  ],
+  "not_for": []
+ },
+ "pdf": {
+  "for_version": "d1c7caf5f35e",
+  "category": "documenti",
+  "value": "legge, unisce, divide, compila e crea PDF con strumenti affidabili",
+  "examples": [
+   "compila questo modulo pdf",
+   "unisci questi pdf",
+   "estrai il testo dal pdf",
+   "dividi il pdf in pagine",
+   "aggiungi filigrana al pdf",
+   "ocr di un pdf scansionato",
+   "merge pdf files"
+  ],
+  "not_for": []
+ },
+ "pptx": {
+  "for_version": "598c981d93f2",
+  "category": "documenti",
+  "value": "crea e modifica vere presentazioni PowerPoint .pptx",
+  "examples": [
+   "fai una presentazione per il cliente",
+   "slide per la riunione",
+   "pitch deck per investitori",
+   "modifica questo powerpoint",
+   "presentazione in pptx",
+   "create a slide deck"
+  ],
+  "not_for": []
+ },
+ "skill-creator": {
+  "for_version": "dcd4803e61e9",
+  "category": "sviluppo",
+  "value": "crea skill nuove e ne misura la qualità con test e confronti",
+  "examples": [
+   "crea una skill per claude",
+   "migliora la mia skill",
+   "testa le prestazioni della skill",
+   "ottimizza la descrizione della skill",
+   "build a new skill",
+   "valutare se una skill si attiva bene"
+  ],
+  "not_for": []
+ },
+ "slack-gif-creator": {
+  "for_version": "2efca615ce55",
+  "category": "design",
+  "value": "crea GIF animate ottimizzate per Slack",
+  "examples": [
+   "fammi una gif animata per slack",
+   "gif per la chat del team",
+   "emoji animata",
+   "make a GIF for Slack"
+  ],
+  "not_for": []
+ },
+ "theme-factory": {
+  "for_version": "c35893e221e2",
+  "category": "design",
+  "value": "applica un tema coerente di colori e font a slide, documenti e pagine",
+  "examples": [
+   "applica un tema grafico alle slide",
+   "palette colori e font coerenti per il report",
+   "cambia lo stile del documento",
+   "theme for my landing page",
+   "rendi uniforme la grafica dei materiali"
+  ],
+  "not_for": []
+ },
+ "web-artifacts-builder": {
+  "for_version": "81c5002c6643",
+  "category": "sviluppo",
+  "value": "costruisce artifact HTML complessi con React, Tailwind e shadcn/ui",
+  "examples": [
+   "artifact complesso con react",
+   "mini app in un artifact con più schermate",
+   "dashboard interattiva come artifact",
+   "react tailwind shadcn artifact"
+  ],
+  "not_for": [
+   "testare",
+   "test"
+  ]
+ },
+ "webapp-testing": {
+  "for_version": "51b7349e77ec",
+  "category": "sviluppo",
+  "value": "testa la tua web app in locale con Playwright: click, screenshot, log del browser",
+  "examples": [
+   "testare la web app in locale",
+   "test end to end con playwright",
+   "verifica che il form funzioni nel browser",
+   "screenshot automatici del sito in sviluppo",
+   "debug di un bug dell'interfaccia",
+   "test my local web app"
+  ],
+  "not_for": []
+ },
+ "xlsx": {
+  "for_version": "f32b1c2b5d5d",
+  "category": "documenti",
+  "value": "genera e corregge veri file Excel con formule, formattazione e grafici",
+  "examples": [
+   "foglio excel con formule per il budget",
+   "sistema questo csv",
+   "tabella excel con grafico",
+   "pulisci i dati del foglio di calcolo",
+   "crea un file xlsx",
+   "spreadsheet with formulas"
+  ],
+  "not_for": []
+ }
+}

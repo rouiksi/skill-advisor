@@ -15,6 +15,8 @@ jobs:
       - name: Ricostruisci indice
         env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: python3 crawler/build_index.py --sources sources.json --out index
+      - name: Controllo qualità suggerimenti
+        run: python3 tests/eval.py index/index.json
       - name: Commit se cambiato
         run: |
           git config user.name "skill-advisor-bot"

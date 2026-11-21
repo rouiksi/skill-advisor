@@ -108,6 +108,20 @@ def main():
         print("[abort] 0 skill trovate: indice precedente mantenuto", file=sys.stderr)
         sys.exit(1)
 
+    # merge enrichment (Italian/English examples, category, value); missing => flagged for review
+    enr_path = os.path.join(os.path.dirname(a.sources) or ".", "enrichment", "skills.json")
+    enr = json.load(open(enr_path)) if os.path.exists(enr_path) else {}
+    for s in skills:
+        e = enr.get(s["name"])
+        if e:
+            s.update({k: e[k] for k in ("category", "value", "examples", "not_for") if k in e})
+            s["enriched"] = "ok" if e.get("for_version") == s["version"] else "stale"
+        else:
+            s["enriched"] = "missing"
+    todo = [s["name"] for s in skills if s["enriched"] != "ok"]
+    if todo:
+        print(f"[enrich] da arricchire/aggiornare: {', '.join(todo)}")
+
     os.makedirs(a.out, exist_ok=True)
     idx_path = os.path.join(a.out, "index.json")
     old = {}
