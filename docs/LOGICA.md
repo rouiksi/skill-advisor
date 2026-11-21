@@ -68,3 +68,15 @@ sources.json ──► crawler/build_index.py ──► index/index.json + chang
 - **Abbinamento BM25** su nome, esempi, parole chiave e descrizione, con soglia normalizzata e taglio dei candidati deboli (sotto il 60% del migliore).
 - **Hook**: usa anche gli ultimi 2 messaggi, ignora i comandi `/`, salta le skill già installate su disco.
 - **Controllo qualità** (`tests/eval.py`): 23 richieste realistiche. Il workflow non pubblica l'indice se il primo posto scende sotto il 75% o i falsi allarmi superano il 25%.
+
+## 6. Nuove fonti (fatto)
+- **3 livelli** in `sources.json`:
+  - *official*: Anthropic (skills, plugin ufficiali, knowledge-work) e OpenAI;
+  - *verified*: Vercel, Cloudflare, Stripe, Hugging Face, Microsoft, Supabase, Figma;
+  - *community*: obra/superpowers, solo con approvazione. ComposioHQ è disattivata: troppe copie e qualità mista.
+- **Controlli** (`crawler/security.py`): il download-ed-esecuzione da domini estranei, il furto di credenziali, le reverse shell, la prompt injection e i caratteri invisibili portano allo scarto. L'installazione della CLI dal dominio dell'editore (`trusted_hosts`) è solo un avviso. Per le fonti *official* sono sempre e solo avvisi.
+- **Filtri**: repository archiviato o fermo da più di 365 giorni → escluso; per la community anche licenza obbligatoria e almeno 200 stelle.
+- **Doppioni**: le copie della stessa skill per editor diversi (es. Stripe per Claude/Cursor/Grok) diventano una sola; a parità di nome vince la fonte più affidabile.
+- **Approvazione**: le candidate community finiscono in `index/candidates.json` e in una issue GitHub "Skill da approvare"; si approvano aggiungendo l'id in `approved.json`.
+- **Abbinamento**: le skill arricchite e quelle ufficiali hanno un piccolo vantaggio; serve almeno 2 parole in comune; dizionario IT→EN esteso.
+- **Limite noto**: le circa 650 skill senza esempi in italiano vengono trovate solo tramite la descrizione inglese. La soluzione è l'arricchimento automatico con l'API Claude (serve una chiave API come secret del repository).

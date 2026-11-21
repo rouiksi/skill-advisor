@@ -67,7 +67,7 @@
   "examples": [
    "integra Claude nella mia app con l'API",
    "chiamata all'SDK Anthropic in python",
-   "quale modello Claude conviene e quanto costa",
+   "quale modello Claude conviene e i prezzi dell'api",
    "streaming e tool use con l'API Claude",
    "prompt caching anthropic",
    "build an agent with the Claude API",
@@ -265,7 +265,10 @@
    "tabella excel con grafico",
    "pulisci i dati del foglio di calcolo",
    "crea un file xlsx",
-   "spreadsheet with formulas"
+   "spreadsheet with formulas",
+   "excel per tenere i conti di casa",
+   "foglio delle spese mensili",
+   "tabella excel di entrate e uscite"
   ],
   "not_for": []
  }

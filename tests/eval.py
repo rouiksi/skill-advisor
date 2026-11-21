@@ -8,7 +8,7 @@ os.environ["SKILL_ADVISOR_INDEX_URL"] = sys.argv[1] if len(sys.argv) > 1 else os
 sys.path.insert(0, os.path.join(ROOT, "skill", "scripts"))
 from suggest import suggest  # noqa: E402
 
-# (prompt, expected skill or None = nothing should be suggested)
+# (prompt, expected skill | tuple of acceptable skills | None = nothing should be suggested)
 CASES = [
     ("mi serve un excel per tenere i conti delle spese mensili", "xlsx"),
     ("ho un csv sporco con righe duplicate, puoi sistemarlo", "xlsx"),
@@ -33,6 +33,14 @@ CASES = [
     ("che tempo fa domani a roma", None),
     ("grazie mille, perfetto così", None),
     ("riassumimi questo articolo in tre punti", None),
+    ("ok procedi pure", None),
+    ("puoi spiegarmi meglio il punto due", None),
+    ("quanto fa 15 per 23", None),
+    ("traduci questo testo in inglese", None),
+    ("perché il cielo è blu", None),
+    ("devo pubblicare il sito su vercel", ("deploy-to-vercel", "vercel-deploy")),
+    ("aggiungi i pagamenti con stripe al mio sito", ("stripe-implementation-planner", "stripe-best-practices")),
+    ("crea un database postgres su supabase con le tabelle utenti", ("supabase-postgres-best-practices", "supabase")),
 ]
 
 
@@ -42,10 +50,11 @@ def main():
     neg = len(CASES) - pos
     for prompt, exp in CASES:
         res = [s["name"] for _, s in suggest(prompt)]
-        ok = (exp in res[:1]) if exp else not res
+        good = set(exp) if isinstance(exp, tuple) else {exp}
+        ok = bool(good & set(res[:1])) if exp else not res
         if exp:
-            hit1 += exp in res[:1]
-            hit3 += exp in res[:3]
+            hit1 += bool(good & set(res[:1]))
+            hit3 += bool(good & set(res[:3]))
         else:
             fp += bool(res)
         print(f"{'OK ' if ok else 'NO '} {prompt[:60]:<60} -> {res}  (atteso: {exp})")

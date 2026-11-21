@@ -26,7 +26,19 @@ IT_EN = {"documento": "document", "foglio": "spreadsheet", "fogli": "spreadsheet
          "testare": "test", "modulo": "form", "moduli": "form", "tabella": "table", "colori": "color",
          "marchio": "brand", "animazione": "animation", "animata": "animation", "arte": "art",
          "unisci": "merge", "unire": "merge", "dividi": "split", "estrai": "extract", "crea": "create",
-         "creare": "create", "scrivi": "write", "scrivere": "write", "modifica": "edit", "modificare": "edit"}
+         "creare": "create", "scrivi": "write", "scrivere": "write", "modifica": "edit", "modificare": "edit",
+         "conti": "accounting", "contabilità": "accounting", "spese": "expense", "fatture": "invoice",
+         "fattura": "invoice", "mensili": "monthly", "budget": "budget", "bilancio": "financial", "righe": "row",
+         "colonne": "column", "sporco": "clean", "pulire": "clean", "pulisci": "clean", "sistemare": "fix",
+         "sistemarlo": "fix", "sistema": "fix", "correggi": "fix", "duplicate": "duplicate", "doppioni": "duplicate",
+         "dati": "data", "analisi": "analysis", "analizza": "analyze", "riunione": "meeting", "consiglio": "board",
+         "presentare": "presentation", "clienti": "customer", "cliente": "customer", "vendite": "sales",
+         "contratto": "contract", "contratti": "contract", "legale": "legal", "email": "email", "mail": "email",
+         "progetto": "project", "attività": "task", "calendario": "calendar", "ricerca": "research",
+         "traduci": "translate", "tradurre": "translate", "riassunto": "summary", "verbale": "minutes",
+         "pagamenti": "payment", "pagamento": "payment", "database": "database", "sviluppo": "development",
+         "distribuire": "deploy", "pubblicare": "deploy", "errore": "error", "errori": "error", "bug": "bug"}
+TIER_BOOST = {"official": 1.0, "verified": 0.95, "community": 0.9}
 K1, B = 1.4, 0.6
 FIELD_WEIGHT = {"name": 3, "examples": 2, "keywords": 1, "description": 1, "value": 1}
 
@@ -41,7 +53,7 @@ def stem(w):
 def tokens(text):
     out = []
     for w in re.findall(r"[a-zà-ù0-9]{2,}", text.lower()):
-        if w not in STOP:
+        if w not in STOP and not w.isdigit():
             out.append(stem(IT_EN.get(w, w)))
     return out
 
@@ -97,6 +109,8 @@ def rank(query, skills):
                 tf[t] = tf.get(t, 0) + 1
         sc = sum(idf[t] * tf[t] * (K1 + 1) / (tf[t] + K1 * (1 - B + B * len(d) / avg)) for t in tf)
         sc /= norm
+        s["_m"] = len(tf)  # distinct request words this skill matched
+        sc *= TIER_BOOST.get(s.get("tier"), 1.0) * (1.25 if s.get("examples") else 1.0)  # curated first
         if any(set(tokens(n)) <= q for n in s.get("not_for", []) if tokens(n)):
             sc *= 0.3  # explicit "not for this" from enrichment
         out.append((sc, s))
@@ -107,11 +121,17 @@ def suggest(text, min_score=0.35, installed=(), limit=3):
     skip = load_dismissed() | set(installed)
     skills = [s for s in load_index().get("skills", []) if s["name"] not in skip]
     ranked = rank(text, skills)
-    if not ranked or ranked[0][0] < min_score:
+    if not ranked:
         return []
     top = ranked[0][0]
+    second = ranked[1][0] if len(ranked) > 1 else 0
+    # long requests dilute the score: also accept a weaker match if it clearly beats every other skill
+    if top < min_score and not (top >= min_score / 2.5 and top >= 1.35 * second and ranked[0][1]["_m"] >= 2):
+        return []
+    min_score = min(min_score, top)
     # keep only clear contenders: within 60% of the best match
-    return [(round(sc, 2), s) for sc, s in ranked if sc >= min_score and sc >= 0.6 * top][:limit]
+    # a single shared word is never enough evidence
+    return [(round(sc, 2), s) for sc, s in ranked if sc >= min_score and sc >= 0.6 * top and s["_m"] >= 2][:limit]
 
 
 def main():
