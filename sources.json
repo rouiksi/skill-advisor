@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "id": "anthropic-official",
+      "type": "github",
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path_prefix": "",
+      "trust": 100,
+      "platforms": ["claude"],
+      "exclude": ["template-skill"]
+    }
+  ]
+}

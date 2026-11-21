@@ -1,0 +1,28 @@
+[
+ {
+  "at": "2026-11-21T00:09:15+00:00",
+  "added": [
+   "anthropic-official/academy-guide",
+   "anthropic-official/algorithmic-art",
+   "anthropic-official/brand-guidelines",
+   "anthropic-official/canvas-design",
+   "anthropic-official/claude-api",
+   "anthropic-official/discernment-nudge",
+   "anthropic-official/doc-coauthoring",
+   "anthropic-official/docx",
+   "anthropic-official/frontend-design",
+   "anthropic-official/internal-comms",
+   "anthropic-official/mcp-builder",
+   "anthropic-official/pdf",
+   "anthropic-official/pptx",
+   "anthropic-official/skill-creator",
+   "anthropic-official/slack-gif-creator",
+   "anthropic-official/theme-factory",
+   "anthropic-official/web-artifacts-builder",
+   "anthropic-official/webapp-testing",
+   "anthropic-official/xlsx"
+  ],
+  "removed": [],
+  "updated": []
+ }
+]
