@@ -41,6 +41,22 @@ CASES = [
     ("devo pubblicare il sito su vercel", ("deploy-to-vercel", "vercel-deploy")),
     ("aggiungi i pagamenti con stripe al mio sito", ("stripe-implementation-planner", "stripe-best-practices")),
     ("crea un database postgres su supabase con le tabelle utenti", ("supabase-postgres-best-practices", "supabase")),
+    # other languages (phrased differently from the enrichment examples)
+    ("necesito una hoja de cálculo para controlar los gastos de casa", "xlsx"),
+    ("prépare une présentation pour le comité de direction", "pptx"),
+    ("ich muss drei PDF-Dateien zu einer zusammenfügen", "pdf"),
+    ("preciso de um cartaz para imprimir para a festa da escola", "canvas-design"),
+    ("quiero cobrar con stripe en mi tienda online", ("stripe-implementation-planner", "stripe-best-practices")),
+    ("écris une réponse polie à ce client mécontent", "draft-response"),
+    ("Zahlungserinnerung für offene Rechnungen an Kunden schreiben", "invoice-chase"),
+    ("revisa las cláusulas de este contrato de proveedor", "review-contract"),
+    ("fammi un preventivo per il cliente dopo la chiamata di oggi", "proposal-builder"),
+    ("faz um gráfico de barras com as vendas do trimestre", "create-viz"),
+    ("hola, ¿qué tal?", None),
+    ("merci beaucoup, c'est parfait", None),
+    ("wie spät ist es in New York", None),
+    ("obrigado, pode continuar", None),
+    ("secondo te è necessario?", None),
 ]
 
 

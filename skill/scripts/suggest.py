@@ -37,7 +37,8 @@ IT_EN = {"documento": "document", "foglio": "spreadsheet", "fogli": "spreadsheet
          "progetto": "project", "attività": "task", "calendario": "calendar", "ricerca": "research",
          "traduci": "translate", "tradurre": "translate", "riassunto": "summary", "verbale": "minutes",
          "pagamenti": "payment", "pagamento": "payment", "database": "database", "sviluppo": "development",
-         "distribuire": "deploy", "pubblicare": "deploy", "errore": "error", "errori": "error", "bug": "bug"}
+         "distribuire": "deploy", "pubblicare": "deploy", "errore": "error", "errori": "error", "bug": "bug",
+         "stampare": "print", "stampa": "print", "festa": "party", "evento": "event"}
 TIER_BOOST = {"official": 1.0, "verified": 0.95, "community": 0.9}
 K1, B = 1.4, 0.6
 FIELD_WEIGHT = {"name": 3, "examples": 2, "keywords": 1, "description": 1, "value": 1}
@@ -91,8 +92,9 @@ def doc_tokens(s):
     return toks
 
 
-def rank(query, skills):
+def rank(query, skills, focus=None):
     q = set(tokens(query))
+    fq = set(tokens(focus)) if focus else q
     if not q or not skills:
         return []
     docs = [doc_tokens(s) for s in skills]
@@ -109,19 +111,25 @@ def rank(query, skills):
                 tf[t] = tf.get(t, 0) + 1
         sc = sum(idf[t] * tf[t] * (K1 + 1) / (tf[t] + K1 * (1 - B + B * len(d) / avg)) for t in tf)
         sc /= norm
-        s["_m"] = len(tf)  # distinct request words this skill matched
+        # distinct, non-generic request words matched (words found in >10% of skills count half)
+        s["_m"] = sum(1 if df[t] <= 0.1 * N else 0.5 for t in tf)
+        if not any(t in fq for t in tf):
+            s["_m"] = 0  # earlier messages alone can't trigger: the current one must match too
         sc *= TIER_BOOST.get(s.get("tier"), 1.0) * (1.25 if s.get("examples") else 1.0)  # curated first
+        brand = s.get("source", "").split("-")[0]
+        if s.get("tier") == "verified" and brand in s["name"] and brand not in q:
+            sc *= 0.6  # a vendor skill (figma-*, stripe-*...) needs the vendor or a clear need to be named
         if any(set(tokens(n)) <= q for n in s.get("not_for", []) if tokens(n)):
             sc *= 0.3  # explicit "not for this" from enrichment
         out.append((sc, s))
     return sorted(out, key=lambda x: -x[0])
 
 
-def suggest(text, min_score=0.35, installed=(), limit=3, platform=None):
+def suggest(text, min_score=0.35, installed=(), limit=3, platform=None, focus=None):
     skip = load_dismissed() | set(installed)
     skills = [s for s in load_index().get("skills", []) if s["name"] not in skip
               and (not platform or platform in s.get("platforms", [platform]))]
-    ranked = rank(text, skills)
+    ranked = rank(text, skills, focus)
     if not ranked:
         return []
     top = ranked[0][0]

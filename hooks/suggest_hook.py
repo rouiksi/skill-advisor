@@ -57,7 +57,7 @@ try:
         # current prompt counts double; earlier messages only add context
         ctx = f"{prompt} {prompt} {recent_user_text(data.get('transcript_path'))}"
         res = suggest(ctx, min_score=0.45, installed=installed_skills(data.get("cwd")), limit=2,
-                      platform="claude")
+                      platform="claude", focus=prompt)
         if res:
             names = "; ".join(f"{s['name']} [{s.get('tier', '')}] — {s.get('value') or s['description'][:120]} ({s['url']})"
                               for _, s in res)

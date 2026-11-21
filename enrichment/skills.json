@@ -23,12 +23,486 @@
    "sfondo astratto generato con p5.js",
    "generative art animation",
    "disegno algoritmico casuale con seed",
-   "visual creativo fatto con codice"
+   "visual creativo fatto con codice",
+   "arte generativo con partículas en p5js",
+   "art génératif avec p5js",
+   "generative Kunst mit p5js",
+   "arte generativa com partículas em p5js"
   ],
   "not_for": [
    "logo",
    "grafica social"
   ]
+ },
+ "anthropic-knowledge-work/brand-voice/guideline-generation": {
+  "category": "marketing",
+  "value": "crea le linee guida sul tono di voce del brand",
+  "examples": [
+   "definisci il tono di voce del marchio",
+   "linee guida di comunicazione del brand",
+   "create brand voice guidelines",
+   "define el tono de voz de la marca",
+   "définis le ton de la marque",
+   "definiere die Markenstimme",
+   "define o tom de voz da marca"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/customer-support/draft-response": {
+  "category": "supporto",
+  "value": "scrive risposte professionali ai clienti",
+  "examples": [
+   "rispondi a questo cliente arrabbiato",
+   "scrivi una risposta al reclamo",
+   "risposta gentile a una richiesta di rimborso",
+   "draft a reply to this customer",
+   "respond to a complaint",
+   "responde a este cliente",
+   "rédige une réponse au client",
+   "antworte diesem Kunden",
+   "responde a este cliente insatisfeito"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/customer-support/kb-article": {
+  "category": "supporto",
+  "value": "trasforma domande frequenti in articoli di aiuto",
+  "examples": [
+   "scrivi una faq per il sito",
+   "articolo di aiuto per i clienti",
+   "write a help center article",
+   "escribe un artículo de ayuda",
+   "rédige une faq",
+   "schreibe einen Hilfeartikel",
+   "escreve um artigo de ajuda"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/data/build-dashboard": {
+  "category": "dati",
+  "value": "crea una dashboard interattiva con grafici e filtri",
+  "examples": [
+   "fammi una dashboard con i dati di vendita",
+   "cruscotto interattivo con grafici e filtri",
+   "pannello riassuntivo dei kpi",
+   "build an interactive dashboard",
+   "executive dashboard with charts",
+   "crea un panel de control con gráficos",
+   "crée un tableau de bord interactif",
+   "erstelle ein interaktives Dashboard",
+   "cria um dashboard interativo"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/data/create-viz": {
+  "category": "dati",
+  "value": "trasforma i dati in grafici chiari e curati",
+  "examples": [
+   "fammi un grafico con questi dati",
+   "visualizza l'andamento delle vendite",
+   "grafico a barre del fatturato",
+   "make a chart from this data",
+   "plot this dataframe",
+   "haz un gráfico con estos datos",
+   "fais un graphique avec ces données",
+   "erstelle ein Diagramm aus diesen Daten",
+   "faz um gráfico com estes dados"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/data/sql-queries": {
+  "category": "dati",
+  "value": "scrive query SQL corrette e veloci per il tuo database",
+  "examples": [
+   "scrivimi una query sql",
+   "estrai dal database i clienti attivi",
+   "ottimizza questa query lenta",
+   "write a sql query",
+   "fix my postgres query",
+   "escríbeme una consulta sql",
+   "écris une requête sql",
+   "schreibe eine SQL-Abfrage",
+   "escreve uma consulta sql"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/design/accessibility-review": {
+  "category": "design",
+  "value": "controlla che pagine e design siano accessibili (WCAG)",
+  "examples": [
+   "il sito è accessibile ai non vedenti?",
+   "verifica accessibilità wcag",
+   "audit accessibility of this page",
+   "revisa la accesibilidad de mi web",
+   "vérifie l'accessibilité du site",
+   "prüfe die Barrierefreiheit",
+   "verifica a acessibilidade do site"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/design/ux-copy": {
+  "category": "scrittura",
+  "value": "scrive i testi dell'interfaccia: pulsanti, errori, messaggi",
+  "examples": [
+   "scrivi i testi dei pulsanti dell'app",
+   "messaggio di errore più chiaro",
+   "write microcopy for the signup",
+   "textos para los botones de la app",
+   "rédige les textes de l'interface",
+   "schreibe die Texte für die App-Oberfläche",
+   "textos para os botões da app"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/engineering/code-review": {
+  "category": "sviluppo",
+  "value": "rivede il codice per bug, sicurezza e prestazioni",
+  "examples": [
+   "rivedi questo codice",
+   "controlla la pull request",
+   "review this pull request",
+   "revisa este código",
+   "relis ce code",
+   "überprüfe diesen Code",
+   "revê este código"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/engineering/debug": {
+  "category": "sviluppo",
+  "value": "trova e corregge un bug con metodo",
+  "examples": [
+   "ho questo errore e non capisco perché",
+   "il programma va in crash",
+   "debug this stack trace",
+   "tengo este error en el código",
+   "j'ai cette erreur dans mon code",
+   "ich habe diesen Fehler im Code",
+   "tenho este erro no código"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/engineering/documentation": {
+  "category": "sviluppo",
+  "value": "scrive documentazione tecnica e README chiari",
+  "examples": [
+   "scrivi il readme del progetto",
+   "documenta questo codice",
+   "write docs for this api",
+   "escribe la documentación del proyecto",
+   "rédige la documentation technique",
+   "schreibe die Dokumentation",
+   "escreve a documentação do projeto"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/human-resources/draft-offer": {
+  "category": "produttività",
+  "value": "prepara la lettera di offerta di lavoro",
+  "examples": [
+   "scrivi la lettera di assunzione",
+   "proposta di lavoro per il candidato",
+   "draft an offer letter",
+   "redacta una carta de oferta de empleo",
+   "rédige une lettre d'offre d'emploi",
+   "schreibe ein Jobangebot",
+   "escreve uma carta de oferta de emprego"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/human-resources/interview-prep": {
+  "category": "produttività",
+  "value": "prepara colloqui strutturati con domande e griglia di valutazione",
+  "examples": [
+   "prepara le domande per il colloquio",
+   "griglia di valutazione dei candidati",
+   "interview plan for a designer",
+   "prepara preguntas para la entrevista",
+   "prépare l'entretien d'embauche",
+   "bereite das Vorstellungsgespräch vor",
+   "prepara perguntas para a entrevista"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/legal/review-contract": {
+  "category": "legale",
+  "value": "rivede un contratto, segnala clausole rischiose e propone modifiche",
+  "examples": [
+   "rivedi questo contratto",
+   "ci sono clausole rischiose in questo accordo",
+   "controlla il contratto del fornitore",
+   "review this contract",
+   "redline this agreement",
+   "revisa este contrato",
+   "relis ce contrat",
+   "prüfe diesen Vertrag",
+   "revê este contrato"
+  ],
+  "not_for": [
+   "scrivi contratto"
+  ]
+ },
+ "anthropic-knowledge-work/legal/triage-nda": {
+  "category": "legale",
+  "value": "valuta subito un accordo di riservatezza (NDA) e il suo rischio",
+  "examples": [
+   "controlla questo nda",
+   "accordo di riservatezza da firmare",
+   "review this nda",
+   "revisa este acuerdo de confidencialidad",
+   "vérifie cet accord de confidentialité",
+   "prüfe diese Geheimhaltungsvereinbarung",
+   "revê este acordo de confidencialidade"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/marketing/campaign-plan": {
+  "category": "marketing",
+  "value": "prepara il piano completo di una campagna marketing",
+  "examples": [
+   "prepara il piano della campagna pubblicitaria",
+   "brief per la campagna di lancio",
+   "calendario contenuti per la campagna",
+   "plan a marketing campaign",
+   "campaign brief for the launch",
+   "planifica una campaña de marketing",
+   "prépare le plan de la campagne marketing",
+   "plane eine Marketingkampagne",
+   "planeia uma campanha de marketing"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/marketing/content-creation": {
+  "category": "marketing",
+  "value": "scrive contenuti marketing per blog, social, newsletter e landing",
+  "examples": [
+   "scrivi un articolo per il blog aziendale",
+   "post per instagram e linkedin",
+   "testo per la landing page",
+   "comunicato stampa per il lancio",
+   "write a blog post",
+   "social media posts for the launch",
+   "escribe un post para el blog",
+   "rédige un article de blog",
+   "schreibe einen Blogartikel",
+   "escreve um post para o blog"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/marketing/email-sequence": {
+  "category": "marketing",
+  "value": "scrive sequenze di email automatiche pronte da inviare",
+  "examples": [
+   "scrivi una sequenza di email per i nuovi iscritti",
+   "email di benvenuto automatiche",
+   "newsletter in più invii per il lancio",
+   "write an email nurture sequence",
+   "drip campaign emails",
+   "escribe una secuencia de emails",
+   "rédige une séquence d'emails",
+   "schreibe eine E-Mail-Sequenz",
+   "escreve uma sequência de emails"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/marketing/seo-audit": {
+  "category": "marketing",
+  "value": "analizza la SEO del sito e indica cosa migliorare",
+  "examples": [
+   "fai un audit seo del mio sito",
+   "perché il sito non si posiziona su google",
+   "trova le parole chiave per il blog",
+   "run an seo audit",
+   "keyword research for my site",
+   "haz una auditoría seo de mi web",
+   "fais un audit seo de mon site",
+   "mach ein SEO-Audit meiner Website",
+   "faz uma auditoria seo do meu site"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/operations/process-doc": {
+  "category": "produttività",
+  "value": "mette per iscritto un processo aziendale con procedure e responsabilità",
+  "examples": [
+   "documenta questa procedura aziendale",
+   "scrivi la procedura operativa",
+   "document this business process",
+   "documenta este proceso",
+   "rédige la procédure opérationnelle",
+   "dokumentiere diesen Prozess",
+   "documenta este processo"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/product-management/write-spec": {
+  "category": "produttività",
+  "value": "trasforma un'idea in specifiche di prodotto chiare",
+  "examples": [
+   "scrivi le specifiche della nuova funzione",
+   "documento dei requisiti",
+   "write a prd",
+   "escribe las especificaciones del producto",
+   "rédige le cahier des charges",
+   "schreibe ein Lastenheft",
+   "escreve a especificação do produto"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/productivity/task-management": {
+  "category": "produttività",
+  "value": "tiene una lista di cose da fare condivisa e aggiornata",
+  "examples": [
+   "tieni traccia delle mie attività",
+   "lista delle cose da fare",
+   "track my tasks",
+   "lista de tareas pendientes",
+   "liste de tâches à faire",
+   "meine Aufgabenliste verwalten",
+   "lista de tarefas"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/sales/call-prep": {
+  "category": "vendite",
+  "value": "prepara un briefing prima di una chiamata con un cliente",
+  "examples": [
+   "preparami per la call con il cliente",
+   "cosa devo sapere prima dell'incontro",
+   "prep me for my sales call",
+   "prepárame para la llamada con el cliente",
+   "prépare-moi pour l'appel client",
+   "bereite mich auf das Kundengespräch vor",
+   "prepara-me para a chamada com o cliente"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/cash-flow-snapshot": {
+  "category": "finanza",
+  "value": "mostra la situazione di cassa delle prossime settimane",
+  "examples": [
+   "quanta liquidità avrò il mese prossimo",
+   "previsione di cassa",
+   "cash flow forecast",
+   "previsión de tesorería",
+   "prévision de trésorerie",
+   "Liquiditätsplanung",
+   "previsão de fluxo de caixa"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/invoice-chase": {
+  "category": "finanza",
+  "value": "scrive solleciti per le fatture non pagate",
+  "examples": [
+   "sollecita i clienti che non hanno pagato",
+   "email di sollecito per fattura scaduta",
+   "chase overdue invoices",
+   "recordatorio de factura impagada",
+   "relance pour facture impayée",
+   "Mahnung für unbezahlte Rechnung",
+   "lembrete de fatura em atraso",
+   "Erinnerung an Kunden mit unbezahlten Rechnungen senden"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/job-post-builder": {
+  "category": "produttività",
+  "value": "scrive annuncio di lavoro, colloquio e offerta in un colpo",
+  "examples": [
+   "scrivi un annuncio di lavoro",
+   "cerco personale, prepara l'annuncio",
+   "write a job post",
+   "escribe una oferta de empleo",
+   "rédige une offre d'emploi",
+   "schreibe eine Stellenanzeige",
+   "escreve um anúncio de emprego"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/proposal-builder": {
+  "category": "vendite",
+  "value": "trasforma appunti di una chiamata in un preventivo o proposta",
+  "examples": [
+   "fammi un preventivo per il cliente",
+   "prepara l'offerta commerciale",
+   "write a proposal from this call",
+   "prepara un presupuesto para el cliente",
+   "prépare un devis pour le client",
+   "erstelle ein Angebot für den Kunden",
+   "faz um orçamento para o cliente"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/review-reputation": {
+  "category": "marketing",
+  "value": "monitora e risponde alle recensioni dei clienti",
+  "examples": [
+   "rispondi alle recensioni su google",
+   "recensione negativa da gestire",
+   "respond to google reviews",
+   "responde a las reseñas de google",
+   "répondre aux avis google",
+   "auf Google-Bewertungen antworten",
+   "responder às avaliações do google"
+  ],
+  "not_for": []
+ },
+ "anthropic-knowledge-work/small-business/social-content-engine": {
+  "category": "marketing",
+  "value": "gestisce il calendario dei post social con continuità",
+  "examples": [
+   "piano editoriale per i social",
+   "calendario dei post di instagram",
+   "social media content calendar",
+   "calendario de publicaciones para redes sociales",
+   "calendrier éditorial pour les réseaux sociaux",
+   "Redaktionsplan für Social Media",
+   "calendário de posts para redes sociais"
+  ],
+  "not_for": []
+ },
+ "anthropic-plugins/claude-md-management/claude-md-improver": {
+  "category": "sviluppo",
+  "value": "migliora il file CLAUDE.md del progetto",
+  "examples": [
+   "migliora il claude.md",
+   "controlla il file claude.md",
+   "improve my claude.md",
+   "mejora el claude.md",
+   "améliore le claude.md",
+   "verbessere die claude.md",
+   "melhora o claude.md"
+  ],
+  "not_for": []
+ },
+ "anthropic-plugins/claude-security/claude-security": {
+  "category": "qualità",
+  "value": "cerca vulnerabilità di sicurezza nel codice",
+  "examples": [
+   "controlla la sicurezza del codice",
+   "ci sono vulnerabilità nel progetto",
+   "security scan my codebase",
+   "revisa la seguridad del código",
+   "vérifie la sécurité du code",
+   "prüfe den Code auf Sicherheitslücken",
+   "verifica a segurança do código"
+  ],
+  "not_for": []
+ },
+ "anthropic-plugins/plugin-dev/hook-development": {
+  "category": "sviluppo",
+  "value": "crea hook di Claude Code che automatizzano azioni",
+  "examples": [
+   "crea un hook per claude code",
+   "esegui un comando ogni volta che claude modifica un file",
+   "create a claude code hook",
+   "crea un hook de claude code",
+   "crée un hook claude code",
+   "erstelle einen Claude-Code-Hook",
+   "cria um hook do claude code"
+  ],
+  "not_for": []
  },
  "brand-guidelines": {
   "for_version": "1120b3769e29",
@@ -38,7 +512,11 @@
    "usa i colori ufficiali di Anthropic",
    "stile del brand Anthropic",
    "font e palette Anthropic per la presentazione",
-   "apply Anthropic brand guidelines"
+   "apply Anthropic brand guidelines",
+   "aplica los colores y la tipografía de la marca",
+   "applique la charte graphique de la marque",
+   "wende die Markenfarben und Schriften an",
+   "aplica as cores e fontes da marca"
   ],
   "not_for": [
    "brand del cliente",
@@ -56,7 +534,15 @@
    "volantino per la serata",
    "design a poster png",
    "copertina grafica per il catalogo",
-   "illustrazione per un manifesto"
+   "illustrazione per un manifesto",
+   "diseña un cartel para la fiesta para imprimir",
+   "crea un póster para el evento",
+   "crée une affiche pour la soirée à imprimer",
+   "fais un flyer pour l'événement",
+   "gestalte ein Plakat für die Party zum Drucken",
+   "erstelle einen Flyer für das Event",
+   "cria um cartaz para a festa para imprimir",
+   "faz um panfleto para o evento"
   ],
   "not_for": []
  },
@@ -72,7 +558,41 @@
    "prompt caching anthropic",
    "build an agent with the Claude API",
    "usare le api di claude nel backend",
-   "chiamare claude da codice node o python"
+   "chiamare claude da codice node o python",
+   "cómo integro la api de claude en mi backend",
+   "intègre l'api claude dans mon application",
+   "wie binde ich die Claude API in mein Backend ein",
+   "como integro a api do claude no meu backend"
+  ],
+  "not_for": []
+ },
+ "cloudflare/cloudflare": {
+  "category": "cloud",
+  "value": "scegli i servizi Cloudflare giusti per sito, api o sicurezza",
+  "examples": [
+   "voglio mettere il sito dietro cloudflare",
+   "quale servizio cloudflare mi serve",
+   "proteggere il sito con cloudflare",
+   "which cloudflare product should I use",
+   "host my api on cloudflare",
+   "qué servicio de cloudflare necesito",
+   "quel service cloudflare utiliser",
+   "welches Cloudflare-Produkt brauche ich",
+   "que serviço cloudflare preciso"
+  ],
+  "not_for": []
+ },
+ "cloudflare/workers-best-practices": {
+  "category": "cloud",
+  "value": "scrivi Cloudflare Workers solidi e pronti per la produzione",
+  "examples": [
+   "scrivo un worker cloudflare",
+   "rivedi il mio cloudflare worker",
+   "write a cloudflare worker",
+   "escribe un worker de cloudflare",
+   "écris un worker cloudflare",
+   "schreibe einen Cloudflare Worker",
+   "escreve um worker cloudflare"
   ],
   "not_for": []
  },
@@ -98,7 +618,11 @@
    "bozza di un documento decisionale",
    "aiutami a scrivere una proposta commerciale strutturata",
    "write a technical spec",
-   "redigere la documentazione del progetto"
+   "redigere la documentazione del progetto",
+   "escribamos juntos una propuesta estructurada",
+   "rédigeons ensemble une proposition détaillée",
+   "lass uns gemeinsam ein Konzeptdokument schreiben",
+   "vamos escrever juntos uma proposta estruturada"
   ],
   "not_for": []
  },
@@ -113,7 +637,45 @@
    "lettera in word da mandare al cliente",
    "aggiungi revisioni al documento word",
    "create a word document",
-   "preventivo in word"
+   "preventivo in word",
+   "redacta un contrato en word",
+   "corrige este documento docx",
+   "rédige une lettre dans un document word",
+   "modifie ce fichier docx",
+   "schreibe einen Vertrag als Word-Dokument",
+   "korrigiere diese docx-Datei",
+   "escreve um relatório em word",
+   "edita este documento docx"
+  ],
+  "not_for": []
+ },
+ "figma/figma-design-to-code": {
+  "category": "design",
+  "value": "trasforma un design Figma in codice fedele",
+  "examples": [
+   "trasforma questo design figma in codice",
+   "converti il file figma in una pagina html",
+   "dal mockup figma al sito",
+   "turn this figma design into code",
+   "convert figma to react",
+   "convierte este diseño de figma en código",
+   "transforme ce design figma en code",
+   "setze dieses Figma-Design in Code um",
+   "converte este design figma em código"
+  ],
+  "not_for": []
+ },
+ "figma/figma-use-slides": {
+  "category": "design",
+  "value": "crea e modifica presentazioni direttamente in Figma Slides",
+  "examples": [
+   "usa figma slides per la presentazione già in figma",
+   "modifica il deck dentro figma",
+   "create a deck in figma slides",
+   "crea diapositivas en figma",
+   "crée des slides dans figma",
+   "erstelle Folien in Figma",
+   "cria slides no figma"
   ],
   "not_for": []
  },
@@ -127,7 +689,11 @@
    "interfaccia moderna per la web app",
    "migliora la grafica della pagina web",
    "scegli tipografia e stile della UI",
-   "make this UI look less generic"
+   "make this UI look less generic",
+   "la landing page parece una plantilla, hazla más cuidada",
+   "rends cette page web plus belle et soignée",
+   "gestalte die Landingpage schöner und moderner",
+   "deixa esta página web mais bonita e cuidada"
   ],
   "not_for": []
  },
@@ -141,7 +707,11 @@
    "newsletter interna aziendale",
    "comunicazione ai dipendenti",
    "status update for leadership",
-   "faq interne"
+   "faq interne",
+   "prepara la actualización semanal para la dirección",
+   "rédige la newsletter interne de l'équipe",
+   "schreibe das wöchentliche Update für die Geschäftsleitung",
+   "prepara a atualização semanal para a direção"
   ],
   "not_for": []
  },
@@ -154,7 +724,11 @@
    "collega Claude alla mia API",
    "connettore per il gestionale",
    "build an MCP server in python",
-   "integrazione di un servizio esterno con strumenti per l'AI"
+   "integrazione di un servizio esterno con strumenti per l'AI",
+   "quiero un servidor mcp para conectar claude a mi sistema",
+   "crée un serveur mcp pour connecter claude à mon outil",
+   "baue einen MCP-Server für meine API",
+   "cria um servidor mcp para ligar o claude ao meu sistema"
   ],
   "not_for": []
  },
@@ -169,7 +743,15 @@
    "dividi il pdf in pagine",
    "aggiungi filigrana al pdf",
    "ocr di un pdf scansionato",
-   "merge pdf files"
+   "merge pdf files",
+   "une estos pdf en un solo archivo",
+   "extrae las tablas de este pdf",
+   "fusionne ces fichiers pdf",
+   "extrais le texte de ce pdf scanné",
+   "füge diese PDF-Dateien zusammen",
+   "extrahiere Tabellen aus dem PDF",
+   "junta estes pdf num só ficheiro",
+   "preenche este formulário pdf"
   ],
   "not_for": []
  },
@@ -183,7 +765,15 @@
    "pitch deck per investitori",
    "modifica questo powerpoint",
    "presentazione in pptx",
-   "create a slide deck"
+   "create a slide deck",
+   "prepara una presentación de diapositivas para el cliente",
+   "haz un pitch deck para inversores",
+   "crée une présentation powerpoint pour la réunion",
+   "prépare des diapositives pour le conseil",
+   "erstelle eine PowerPoint-Präsentation für das Meeting",
+   "mach Folien für die Präsentation",
+   "cria uma apresentação de slides para o cliente",
+   "faz um pitch deck em powerpoint"
   ],
   "not_for": []
  },
@@ -197,7 +787,11 @@
    "testa le prestazioni della skill",
    "ottimizza la descrizione della skill",
    "build a new skill",
-   "valutare se una skill si attiva bene"
+   "valutare se una skill si attiva bene",
+   "quiero crear una nueva skill para claude",
+   "crée une nouvelle skill pour claude",
+   "erstelle einen neuen Skill für Claude",
+   "quero criar uma nova skill para o claude"
   ],
   "not_for": []
  },
@@ -209,7 +803,60 @@
    "fammi una gif animata per slack",
    "gif per la chat del team",
    "emoji animata",
-   "make a GIF for Slack"
+   "make a GIF for Slack",
+   "un gif animado para el canal de slack",
+   "crée un gif animé pour slack",
+   "mach ein animiertes GIF für Slack",
+   "faz um gif animado para o slack"
+  ],
+  "not_for": []
+ },
+ "stripe/plugin/stripe-best-practices": {
+  "category": "finanza",
+  "value": "evita errori comuni quando integri o testi Stripe",
+  "examples": [
+   "controlla la mia integrazione stripe",
+   "come testo i pagamenti stripe in sandbox",
+   "webhook di stripe che non funzionano",
+   "review my stripe integration",
+   "stripe test mode best practices",
+   "revisa mi integración de stripe",
+   "vérifie mon intégration stripe",
+   "prüfe meine Stripe-Integration",
+   "revê a minha integração stripe"
+  ],
+  "not_for": []
+ },
+ "stripe/plugin/stripe-implementation-planner": {
+  "category": "finanza",
+  "value": "pianifica l'integrazione dei pagamenti Stripe giusta per il tuo sito o app",
+  "examples": [
+   "aggiungi i pagamenti con stripe al mio sito",
+   "voglio far pagare gli abbonamenti online",
+   "come integro stripe nel mio ecommerce",
+   "attivare il checkout con carta di credito",
+   "add stripe payments to my website",
+   "set up subscriptions billing with stripe",
+   "añade pagos con stripe a mi web",
+   "ajoute les paiements stripe à mon site",
+   "Stripe-Zahlungen in meine Website einbauen",
+   "adiciona pagamentos com stripe ao meu site"
+  ],
+  "not_for": []
+ },
+ "supabase/supabase": {
+  "category": "sviluppo",
+  "value": "usa Supabase per database, login utenti e storage senza errori",
+  "examples": [
+   "crea un database su supabase",
+   "aggiungi il login utenti con supabase",
+   "salva i file su supabase storage",
+   "set up supabase auth",
+   "create tables in supabase",
+   "crea una base de datos en supabase",
+   "crée une base de données supabase",
+   "richte Supabase für meine App ein",
+   "cria uma base de dados no supabase"
   ],
   "not_for": []
  },
@@ -222,7 +869,43 @@
    "palette colori e font coerenti per il report",
    "cambia lo stile del documento",
    "theme for my landing page",
-   "rendi uniforme la grafica dei materiali"
+   "rendi uniforme la grafica dei materiali",
+   "dale un tema de colores coherente a las diapositivas",
+   "applique un thème de couleurs au document",
+   "gib den Folien ein einheitliches Farbthema",
+   "aplica um tema de cores aos slides"
+  ],
+  "not_for": []
+ },
+ "vercel/deploy-to-vercel": {
+  "category": "cloud",
+  "value": "pubblica online il tuo sito o la tua app su Vercel in pochi passi",
+  "examples": [
+   "devo pubblicare il sito su vercel",
+   "metti online la mia app next.js",
+   "fai il deploy del progetto",
+   "deploy my app to vercel",
+   "put my website live",
+   "publica mi web en vercel",
+   "déploie mon site sur vercel",
+   "veröffentliche meine Website auf Vercel",
+   "publica o meu site no vercel"
+  ],
+  "not_for": []
+ },
+ "vercel/web-design-guidelines": {
+  "category": "design",
+  "value": "controlla che l'interfaccia web rispetti le buone regole di usabilità",
+  "examples": [
+   "controlla l'interfaccia del mio sito",
+   "rivedi la ui della pagina",
+   "la mia interfaccia è fatta bene?",
+   "review my ui code",
+   "check my web interface guidelines",
+   "revisa la interfaz de mi web",
+   "vérifie l'interface de mon site",
+   "überprüfe die Benutzeroberfläche meiner Seite",
+   "revê a interface do meu site"
   ],
   "not_for": []
  },
@@ -234,7 +917,11 @@
    "artifact complesso con react",
    "mini app in un artifact con più schermate",
    "dashboard interattiva come artifact",
-   "react tailwind shadcn artifact"
+   "react tailwind shadcn artifact",
+   "crea una pequeña app web interactiva en react",
+   "crée une petite application web interactive",
+   "baue eine kleine interaktive Web-App mit React",
+   "cria uma pequena app web interativa em react"
   ],
   "not_for": [
    "testare",
@@ -251,7 +938,12 @@
    "verifica che il form funzioni nel browser",
    "screenshot automatici del sito in sviluppo",
    "debug di un bug dell'interfaccia",
-   "test my local web app"
+   "test my local web app",
+   "prueba con playwright el login de mi app local",
+   "haz tests automáticos de mi web y captura pantallas",
+   "teste le login de mon application locale avec playwright",
+   "teste meine lokale Web-App automatisch mit Playwright",
+   "testa o login da minha aplicação local com playwright"
   ],
   "not_for": []
  },
@@ -268,7 +960,15 @@
    "spreadsheet with formulas",
    "excel per tenere i conti di casa",
    "foglio delle spese mensili",
-   "tabella excel di entrate e uscite"
+   "tabella excel di entrate e uscite",
+   "hazme una hoja de cálculo con los gastos del mes",
+   "limpia este csv con filas duplicadas",
+   "crée un tableur excel pour suivre le budget",
+   "nettoie ce fichier csv",
+   "erstelle eine Excel-Tabelle für die Ausgaben",
+   "bereinige diese CSV-Datei",
+   "faz uma planilha de despesas mensais",
+   "organiza esta planilha excel"
   ],
   "not_for": []
  }
