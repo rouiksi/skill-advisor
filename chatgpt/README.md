@@ -3,7 +3,7 @@
 ChatGPT non esegue script locali: usa una **Custom GPT** (o progetto) con una Action che legge l'indice.
 
 ## 1. Action (schema OpenAPI)
-Incolla `openapi.yaml` nella sezione Actions, sostituendo `rouiksi` con il tuo utente GitHub. Nessuna autenticazione.
+Incolla `openapi.yaml` nella sezione Actions. Nessuna autenticazione.
 
 ## 2. Istruzioni da incollare
 ```
