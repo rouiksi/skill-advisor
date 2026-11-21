@@ -1,0 +1,428 @@
+[
+ {
+  "id": "superpowers/brainstorming",
+  "name": "brainstorming",
+  "plugin": "",
+  "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+  "keywords": [
+   "brainstorming",
+   "must",
+   "before",
+   "creative",
+   "work",
+   "creating",
+   "features",
+   "building",
+   "components",
+   "adding",
+   "functionality",
+   "modifying"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
+  "version": "dd3bb0bf33ee"
+ },
+ {
+  "id": "superpowers/diagnosing-superpowers",
+  "name": "diagnosing-superpowers",
+  "plugin": "",
+  "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for ",
+  "keywords": [
+   "diagnosing",
+   "superpowers",
+   "session",
+   "went",
+   "wrong",
+   "human",
+   "partner",
+   "wants",
+   "know",
+   "why",
+   "repeated",
+   "work"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/diagnosing-superpowers",
+  "version": "3143de8695c5"
+ },
+ {
+  "id": "superpowers/dispatching-parallel-agents",
+  "name": "dispatching-parallel-agents",
+  "plugin": "",
+  "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+  "keywords": [
+   "dispatching",
+   "parallel",
+   "agents",
+   "facing",
+   "independent",
+   "tasks",
+   "worked",
+   "without",
+   "shared",
+   "state",
+   "sequential",
+   "dependencies"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
+  "version": "1968923066f3"
+ },
+ {
+  "id": "superpowers/executing-plans",
+  "name": "executing-plans",
+  "plugin": "",
+  "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+  "keywords": [
+   "executing",
+   "plans",
+   "implementation",
+   "plan",
+   "current",
+   "session",
+   "implementer",
+   "yourself",
+   "human",
+   "partner",
+   "chose",
+   "inline"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
+  "version": "deaf176fa179"
+ },
+ {
+  "id": "superpowers/finishing-a-development-branch",
+  "name": "finishing-a-development-branch",
+  "plugin": "",
+  "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+  "keywords": [
+   "finishing",
+   "development",
+   "branch",
+   "implementation",
+   "complete",
+   "tests",
+   "pass",
+   "need",
+   "decide",
+   "how",
+   "integrate",
+   "work"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
+  "version": "8db5a922b242"
+ },
+ {
+  "id": "superpowers/receiving-code-review",
+  "name": "receiving-code-review",
+  "plugin": "",
+  "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+  "keywords": [
+   "receiving",
+   "code",
+   "review",
+   "feedback",
+   "before",
+   "implementing",
+   "suggestions",
+   "especially",
+   "seems",
+   "unclear",
+   "technically",
+   "questionable"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
+  "version": "091df1629510"
+ },
+ {
+  "id": "superpowers/requesting-code-review",
+  "name": "requesting-code-review",
+  "plugin": "",
+  "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+  "keywords": [
+   "requesting",
+   "code",
+   "review",
+   "completing",
+   "tasks",
+   "implementing",
+   "major",
+   "features",
+   "before",
+   "merging",
+   "verify",
+   "work"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
+  "version": "2180e14a448e"
+ },
+ {
+  "id": "superpowers/subagent-driven-development",
+  "name": "subagent-driven-development",
+  "plugin": "",
+  "description": "Use when executing implementation plans with independent tasks in the current session",
+  "keywords": [
+   "subagent",
+   "driven",
+   "development",
+   "executing",
+   "implementation",
+   "plans",
+   "independent",
+   "tasks",
+   "current",
+   "session"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
+  "version": "1baf70e307bd"
+ },
+ {
+  "id": "superpowers/systematic-debugging",
+  "name": "systematic-debugging",
+  "plugin": "",
+  "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+  "keywords": [
+   "systematic",
+   "debugging",
+   "encountering",
+   "bug",
+   "test",
+   "failure",
+   "unexpected",
+   "behavior",
+   "before",
+   "proposing",
+   "fixes"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
+  "version": "c62d00f6a4aa"
+ },
+ {
+  "id": "superpowers/test-driven-development",
+  "name": "test-driven-development",
+  "plugin": "",
+  "description": "Use when implementing any feature or bugfix, before writing implementation code",
+  "keywords": [
+   "test",
+   "driven",
+   "development",
+   "implementing",
+   "feature",
+   "bugfix",
+   "before",
+   "writing",
+   "implementation",
+   "code"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
+  "version": "64b03fce4aee"
+ },
+ {
+  "id": "superpowers/using-git-worktrees",
+  "name": "using-git-worktrees",
+  "plugin": "",
+  "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+  "keywords": [
+   "git",
+   "worktrees",
+   "starting",
+   "feature",
+   "work",
+   "needs",
+   "isolation",
+   "current",
+   "workspace",
+   "before",
+   "executing",
+   "implementation"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
+  "version": "8cfb86f12126"
+ },
+ {
+  "id": "superpowers/using-superpowers",
+  "name": "using-superpowers",
+  "plugin": "",
+  "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+  "keywords": [
+   "superpowers",
+   "starting",
+   "conversation",
+   "establishes",
+   "how",
+   "find",
+   "requiring",
+   "invocation",
+   "before",
+   "response",
+   "including",
+   "clarifying"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
+  "version": "82c5c8866ad7"
+ },
+ {
+  "id": "superpowers/verification-before-completion",
+  "name": "verification-before-completion",
+  "plugin": "",
+  "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+  "keywords": [
+   "verification",
+   "before",
+   "completion",
+   "about",
+   "claim",
+   "work",
+   "complete",
+   "fixed",
+   "passing",
+   "committing",
+   "creating",
+   "prs"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
+  "version": "2befe7fc55bc"
+ },
+ {
+  "id": "superpowers/writing-plans",
+  "name": "writing-plans",
+  "plugin": "",
+  "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+  "keywords": [
+   "writing",
+   "plans",
+   "have",
+   "spec",
+   "requirements",
+   "multi",
+   "step",
+   "task",
+   "before",
+   "touching",
+   "code"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
+  "version": "a6c67c190006"
+ },
+ {
+  "id": "superpowers/writing-skills",
+  "name": "writing-skills",
+  "plugin": "",
+  "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+  "keywords": [
+   "writing",
+   "creating",
+   "new",
+   "editing",
+   "existing",
+   "verifying",
+   "work",
+   "before",
+   "deployment"
+  ],
+  "source": "superpowers",
+  "tier": "community",
+  "trust": 40,
+  "platforms": [
+   "claude",
+   "codex"
+  ],
+  "url": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
+  "version": "c2e7eb235ef1"
+ }
+]
