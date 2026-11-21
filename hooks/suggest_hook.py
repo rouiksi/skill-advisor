@@ -56,12 +56,14 @@ try:
     if len(prompt) >= 20 and not prompt.lstrip().startswith("/"):  # skip short replies and slash commands
         # current prompt counts double; earlier messages only add context
         ctx = f"{prompt} {prompt} {recent_user_text(data.get('transcript_path'))}"
-        res = suggest(ctx, min_score=0.45, installed=installed_skills(data.get("cwd")), limit=2)
+        res = suggest(ctx, min_score=0.45, installed=installed_skills(data.get("cwd")), limit=2,
+                      platform="claude")
         if res:
-            names = ", ".join(f"{s['name']} — {s.get('value', '')} ({s['url']})" for _, s in res)
+            names = "; ".join(f"{s['name']} [{s.get('tier', '')}] — {s.get('value') or s['description'][:120]} ({s['url']})"
+                              for _, s in res)
             print(json.dumps({"hookSpecificOutput": {
                 "hookEventName": "UserPromptSubmit",
-                "additionalContext": f"[skill-advisor] Skill ufficiali pertinenti: {names}. "
+                "additionalContext": f"[skill-advisor] Skill pertinenti da fonti controllate: {names}. "
                                      "Suggeriscile in una riga a fine risposta SOLO se davvero utili qui "
                                      "e non gia' disponibili tra le tue skill (anche con prefisso, es. anthropic-skills:)."}}))
 except Exception:

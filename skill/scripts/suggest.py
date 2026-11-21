@@ -117,9 +117,10 @@ def rank(query, skills):
     return sorted(out, key=lambda x: -x[0])
 
 
-def suggest(text, min_score=0.35, installed=(), limit=3):
+def suggest(text, min_score=0.35, installed=(), limit=3, platform=None):
     skip = load_dismissed() | set(installed)
-    skills = [s for s in load_index().get("skills", []) if s["name"] not in skip]
+    skills = [s for s in load_index().get("skills", []) if s["name"] not in skip
+              and (not platform or platform in s.get("platforms", [platform]))]
     ranked = rank(text, skills)
     if not ranked:
         return []
@@ -141,6 +142,7 @@ def main():
     ap.add_argument("--installed", default="", help="nomi separati da virgola")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--dismiss")
+    ap.add_argument("--platform", default="claude", help="claude | chatgpt | codex | all")
     a = ap.parse_args()
 
     if a.dismiss:
@@ -150,13 +152,15 @@ def main():
         print(f"'{a.dismiss}' non verra' piu' suggerita.")
         return
 
-    res = suggest(a.context or sys.stdin.read(), a.min, [x for x in a.installed.split(",") if x])
+    res = suggest(a.context or sys.stdin.read(), a.min, [x for x in a.installed.split(",") if x],
+                  platform=None if a.platform == "all" else a.platform)
     if a.json:
         print(json.dumps([{"score": sc, **s} for sc, s in res], ensure_ascii=False))
     else:
         for sc, s in res:
             why = s.get("value") or s["description"][:140]
-            print(f"- {s['name']} ({sc}): {why} -> {s['url']}")
+            who = {"official": "ufficiale", "verified": "editore verificato", "community": "community"}.get(s.get("tier"), "")
+            print(f"- {s['name']} [{who}] ({sc}): {why} -> {s['url']}")
 
 
 if __name__ == "__main__":
