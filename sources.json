@@ -1,14 +1,162 @@
 {
-  "sources": [
-    {
-      "id": "anthropic-official",
-      "type": "github",
-      "repo": "anthropics/skills",
-      "branch": "main",
-      "path_prefix": "",
-      "trust": 100,
-      "platforms": ["claude"],
-      "exclude": ["template-skill"]
-    }
-  ]
+ "_tiers": {
+  "official": "pubblicate da Anthropic/OpenAI: entrano in automatico; i controlli di sicurezza generano solo avvisi",
+  "verified": "pubblicate dall'azienda proprietaria del prodotto: entrano in automatico se passano i controlli",
+  "community": "entrano SOLO se approvate in approved.json, dopo controlli di sicurezza, licenza, stelle e aggiornamento"
+ },
+ "gates": {
+  "max_age_days": 365,
+  "community_min_stars": 200,
+  "community_license_required": true
+ },
+ "sources": [
+  {
+   "id": "anthropic-skills",
+   "repo": "anthropics/skills",
+   "tier": "official",
+   "platforms": [
+    "claude"
+   ],
+   "exclude": [
+    "template-skill"
+   ]
+  },
+  {
+   "id": "anthropic-plugins",
+   "repo": "anthropics/claude-plugins-official",
+   "tier": "official",
+   "platforms": [
+    "claude"
+   ]
+  },
+  {
+   "id": "anthropic-knowledge-work",
+   "repo": "anthropics/knowledge-work-plugins",
+   "tier": "official",
+   "platforms": [
+    "claude"
+   ]
+  },
+  {
+   "id": "openai-skills",
+   "repo": "openai/skills",
+   "tier": "official",
+   "platforms": [
+    "chatgpt",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "openai.com",
+    "sentry.dev",
+    "render.com"
+   ]
+  },
+  {
+   "id": "vercel",
+   "repo": "vercel-labs/agent-skills",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "vercel.com",
+    "vercel.sh"
+   ]
+  },
+  {
+   "id": "cloudflare",
+   "repo": "cloudflare/skills",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "cloudflare.com"
+   ]
+  },
+  {
+   "id": "stripe",
+   "repo": "stripe/ai",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "stripe.com"
+   ]
+  },
+  {
+   "id": "huggingface",
+   "repo": "huggingface/skills",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "hf.co",
+    "huggingface.co"
+   ]
+  },
+  {
+   "id": "microsoft",
+   "repo": "microsoft/skills",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "microsoft.com",
+    "azure.com",
+    "aka.ms"
+   ]
+  },
+  {
+   "id": "supabase",
+   "repo": "supabase/agent-skills",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "supabase.com"
+   ]
+  },
+  {
+   "id": "figma",
+   "repo": "figma/mcp-server-guide",
+   "tier": "verified",
+   "platforms": [
+    "claude",
+    "codex"
+   ],
+   "trusted_hosts": [
+    "figma.com"
+   ]
+  },
+  {
+   "id": "superpowers",
+   "repo": "obra/superpowers",
+   "tier": "community",
+   "platforms": [
+    "claude",
+    "codex"
+   ]
+  },
+  {
+   "id": "composio-awesome",
+   "repo": "ComposioHQ/awesome-claude-skills",
+   "tier": "community",
+   "platforms": [
+    "claude"
+   ],
+   "enabled": false,
+   "_note": "864 skill, molte copie di quelle ufficiali e qualità mista: attivare solo con una revisione dedicata"
+  }
+ ]
 }

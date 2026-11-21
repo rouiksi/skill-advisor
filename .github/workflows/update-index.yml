@@ -5,6 +5,7 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+  issues: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,3 +24,13 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add index/
           git diff --cached --quiet || { git commit -m "Aggiorna indice skill" && git push; }
+      - name: Aggiorna issue "Skill da approvare"
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: |
+          python3 crawler/approval_issue.py > body.md
+          N=$(gh issue list --label da-approvare --state open --json number -q '.[0].number')
+          if [ -s body.md ]; then
+            gh label create da-approvare --color FBCA04 2>/dev/null || true
+            if [ -n "$N" ]; then gh issue edit "$N" --body-file body.md
+            else gh issue create --title "Skill da approvare" --label da-approvare --body-file body.md; fi
+          elif [ -n "$N" ]; then gh issue close "$N" --comment "Nessuna skill in attesa."; fi
