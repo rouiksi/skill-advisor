@@ -8,7 +8,7 @@ import argparse, json, os, re, sys, time, urllib.request
 
 INDEX_URL = os.environ.get(
     "SKILL_ADVISOR_INDEX_URL",
-    "https://raw.githubusercontent.com/OWNER/skill-advisor/main/index/index.json",
+    "https://raw.githubusercontent.com/rouiksi/skill-advisor/main/index/index.json",
 )
 CACHE_DIR = os.path.expanduser("~/.cache/skill-advisor")
 CACHE = os.path.join(CACHE_DIR, "index.json")

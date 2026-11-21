@@ -3,7 +3,7 @@ info:
   title: Skill Advisor Index
   version: "1.0"
 servers:
-  - url: https://raw.githubusercontent.com/OWNER/skill-advisor/main
+  - url: https://raw.githubusercontent.com/rouiksi/skill-advisor/main
 paths:
   /index/index.json:
     get:
