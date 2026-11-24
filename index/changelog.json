@@ -1,5 +1,31 @@
 [
  {
+  "at": "2026-11-24T22:22:47+00:00",
+  "added": [
+   "anthropic-plugins/claude-security/attack-surface-analysis",
+   "anthropic-plugins/claude-security/ci-review",
+   "anthropic-plugins/claude-security/hosted",
+   "anthropic-plugins/claude-security/install-cli",
+   "anthropic-plugins/claude-security/threat-model",
+   "cloudflare/artifacts",
+   "cloudflare/flagship",
+   "figma/figma-weave-workflows"
+  ],
+  "removed": [],
+  "updated": [
+   "anthropic-plugins/claude-security/claude-security",
+   "cloudflare/cloudflare",
+   "figma/figma-code-workflows",
+   "figma/figma-spec",
+   "figma/figma-use-figjam"
+  ],
+  "counts": {
+   "added": 8,
+   "removed": 0,
+   "updated": 5
+  }
+ },
+ {
   "at": "2026-11-24T09:50:03+00:00",
   "added": [],
   "removed": [],
