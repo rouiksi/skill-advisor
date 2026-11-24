@@ -1,5 +1,20 @@
 [
  {
+  "at": "2026-11-24T09:50:03+00:00",
+  "added": [],
+  "removed": [],
+  "updated": [
+   "huggingface/huggingface-gradio",
+   "stripe/plugin/connect-recommend",
+   "stripe/plugin/stripe-projects"
+  ],
+  "counts": {
+   "added": 0,
+   "removed": 0,
+   "updated": 3
+  }
+ },
+ {
   "at": "2026-11-21T00:49:32+00:00",
   "added": [
    "anthropic-knowledge-work/apollo/enrich-lead",
