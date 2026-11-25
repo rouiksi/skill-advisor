@@ -1,5 +1,20 @@
 [
  {
+  "at": "2026-11-25T08:26:01+00:00",
+  "added": [],
+  "removed": [],
+  "updated": [
+   "stripe/plugin/connect-required-verification-information",
+   "stripe/plugin/stripe-bfcm-dashboard",
+   "stripe/plugin/stripe-projects"
+  ],
+  "counts": {
+   "added": 0,
+   "removed": 0,
+   "updated": 3
+  }
+ },
+ {
   "at": "2026-11-24T22:22:47+00:00",
   "added": [
    "anthropic-plugins/claude-security/attack-surface-analysis",
