@@ -1,5 +1,24 @@
 [
  {
+  "at": "2026-11-26T21:28:21+00:00",
+  "added": [],
+  "removed": [
+   "huggingface/huggingface-community-evals",
+   "huggingface/huggingface-llm-trainer",
+   "huggingface/huggingface-local-models",
+   "huggingface/huggingface-paper-publisher",
+   "huggingface/huggingface-tool-builder"
+  ],
+  "updated": [
+   "huggingface/huggingface-vision-trainer"
+  ],
+  "counts": {
+   "added": 0,
+   "removed": 5,
+   "updated": 1
+  }
+ },
+ {
   "at": "2026-11-25T21:38:27+00:00",
   "added": [],
   "removed": [
